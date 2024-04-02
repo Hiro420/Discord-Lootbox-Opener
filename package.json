@@ -1,0 +1,16 @@
+{
+  "name": "discord-lootbox-opener",
+  "version": "1.0.0",
+  "description": "Automatic opener for 2024 April Fools discord lootboxes",
+  "main": "openLootbox.ts",
+  "scripts": {
+    "start": "ts-node openLootbox.ts"
+  },
+  "keywords": [],
+  "author": "Hiro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "ts-node": "^10.9.2"
+  }
+}
