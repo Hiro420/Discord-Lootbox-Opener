@@ -37,7 +37,7 @@ async function postData() {
     const url = 'https://canary.discord.com/api/v9/users/@me/lootboxes/open';
     const headers = {
         'Authorization': '', // here you put your token
-        'X-Super-Properties': 'eyJjbGllbnRfYnVpbGRfbnVtYmVyIjoyODA2MTJ9'
+        'X-Super-Properties': Buffer.from('{"client_build_number":280612}').toString('base64')
     };
 
     const response = await axios.post(url, {}, { headers: headers });
