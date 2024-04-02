@@ -36,25 +36,8 @@ const itemMap: any = {
 async function postData() {
     const url = 'https://canary.discord.com/api/v9/users/@me/lootboxes/open';
     const headers = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en-US,he;q=0.9',
         'Authorization': '', // here you put your token
-        'Content-Length': '0',
-        'Cookie': '', // here you put your cookie
-        'Origin': 'https://canary.discord.com',
-        'Referer': 'https://canary.discord.com/channels/@me',
-        'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.207 Chrome/120.0.6099.291 Electron/28.2.7 Safari/537.36',
-        'X-Debug-Options': 'bugReporterEnabled',
-        'X-Discord-Locale': 'en-US',
-        'X-Discord-Timezone': 'Asia/Jerusalem',
-        'X-Super-Properties': '' // here you put your X-Super-Properties from previous requests
+        'X-Super-Properties': 'eyJjbGllbnRfYnVpbGRfbnVtYmVyIjoyODA2MTJ9'
     };
 
     const response = await axios.post(url, {}, { headers: headers });
